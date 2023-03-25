@@ -4,4 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def product(request):
-    return HttpResponse('This is the product page')
+    return render(request, 'product.html', {})

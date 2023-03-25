@@ -7,3 +7,5 @@ urlpatterns = [
     path('view/', include('view.urls')),
     path('payments/', include('payments.urls')),
 ]
+
+

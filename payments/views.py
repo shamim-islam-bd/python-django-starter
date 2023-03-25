@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def payments(request):
-    return HttpResponse("This is the payments page")
+    return render(request, 'payments-1.html', {})
     
