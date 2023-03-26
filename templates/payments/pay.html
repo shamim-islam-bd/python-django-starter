@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Pay</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <link rel="icon" href="" type="image/x-icon" />
+  </head>
+  <body>
+
+    {% if pay %}
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Payment ID</th>
+        <th>Payment Option</th>
+        <th>Minimum Payment</th>
+      </tr>
+
+      {% for pay in pay %}
+      <tr>
+        <td>{{ pay.id }}</td>
+        <td>{{ pay.pay_id }}</td>
+        <td>{{ pay.pay_option }}</td>
+        <td>{{ pay.min_pay }}</td>
+      </tr>
+      {% endfor %}
+
+    </table>
+    {% else %}
+    <h1>No data on database!</h1>
+    {% endif %} 
+    
+  </body>
+</html>
