@@ -1,15 +1,19 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en-US">
   <head>
-    <title>Pay</title>
+    <title>{% block title %} Pay Bill Reports  {% endblock title %}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="Keywords" content="" />
-    <meta name="Description" content="" />
-    <link rel="icon" href="" type="image/x-icon" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
+    {% block css %}
+      <link rel="stylesheet" href="{% static 'css/payment.css' %}" />
+    {% endblock css %}
+
+  </head>
+
+  <body>
     {% if pay %}
     <table>
       <tr>
@@ -31,7 +35,7 @@
     </table>
     {% else %}
     <h1>No data on database!</h1>
-    {% endif %} 
-    
+    {% endif %}
+ 
   </body>
 </html>
