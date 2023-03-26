@@ -1,0 +1,16 @@
+.img{
+    width: 60%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body{
+    background-color: #84bfdb;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+}
