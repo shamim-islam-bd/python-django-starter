@@ -1,6 +1,4 @@
-body {
-  background-color: #dfa343;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.container {
+  padding: 100px;
 }
+
